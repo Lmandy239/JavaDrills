@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class JavaDrill {
@@ -13,6 +15,28 @@ public class JavaDrill {
 		System.out.println("Enter a word");
 		String word = sc.nextLine();
 		jd.reverseString(word);
+		//Find Maximum
+		System.out.println("\n\n");
+		
+		List<Integer> numbers = new ArrayList<>();
+		int max = Integer.MIN_VALUE;
+		numbers.add(5);
+		numbers.add(6);
+		numbers.add(7);
+		numbers.add(8);
+		numbers.add(9);
+		numbers.add(9);
+		numbers.add(81);	
+		
+		for(int i = 0; i < numbers.size(); i++) {
+			if(max < numbers.get(i)) {
+				max = numbers.get(i);
+			}
+			}
+		System.out.println(max);
+		
+		
+		
 		
 	}
 	public double circleArea(int radius) {
